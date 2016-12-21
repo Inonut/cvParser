@@ -2,7 +2,7 @@ package cv.nlp.service.collect.impl;
 
 import cv.domain.neo4j.Language;
 import cv.support.FindSimilarSequence;
-import cv.support.StreamWrapper;
+import cv.support.DataWrapper;
 import cv.nlp.service.collect.Worker;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
@@ -18,12 +18,12 @@ public class LanguageCollect implements Worker<List<Language>> {
     @Override
     public List<Language> work(List<Pair<Section, SectionContent>> data) {
 
-        StreamWrapper streamData = new StreamWrapper(data);
+        DataWrapper streamData = new DataWrapper(data);
         FindSimilarSequence sequence = new FindSimilarSequence(streamData.collect(Section.LANGUAGE)).find();
 
         List<Language> result = new ArrayList<>();
         sequence.getResult().forEach(seq -> {
-            StreamWrapper seqWrapper = new StreamWrapper(seq);
+            DataWrapper seqWrapper = new DataWrapper(seq);
 
             Language education = new Language();
             education.setName(seqWrapper.collect(Section.LANGUAGE_NAME));

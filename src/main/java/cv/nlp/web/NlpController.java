@@ -5,14 +5,14 @@ import cv.support.ApplicationConstants;
 import cv.support.Util;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
+import cv.tika.TikaExtraction;
 import javafx.util.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 
 /**
@@ -30,7 +30,8 @@ public class NlpController {
 
     @RequestMapping("/classify")
     public void classify() throws IOException {
-        String inputData = Util.normalizeString(new String(Files.readAllBytes(Paths.get("D:\\KEPLER-PROJECTS\\Modules\\LOCAL\\nertrain\\testCV4.txt"))));
+//        String inputData = Util.normalizeString(new String(Files.readAllBytes(Paths.get("D:\\KEPLER-PROJECTS\\Modules\\LOCAL\\nertrain\\testCV4.txt"))));
+        String inputData = Util.normalizeString(new TikaExtraction().perform(new File("D:\\KEPLER-PROJECTS\\Modules\\LOCAL\\nertrain\\testCV5.pdf")));
         List<Pair<Section, SectionContent>> data = nlpService.classify(inputData);
 
         nlpService.saveTrain(data, inputData);

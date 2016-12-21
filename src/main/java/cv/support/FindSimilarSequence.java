@@ -44,47 +44,4 @@ public class FindSimilarSequence {
         return this.result;
     }
 
-    /*//O(n^2)... :(
-    public FindSimilarSequence find(){
-
-        if(this.data == null){
-            return this;
-        }
-
-        List<Pair<String, String>> seq = new ArrayList<>();
-
-        for (int i = 0;i<this.data.size();i++){
-            seq.add(this.data.get(i));
-            if(!existSequence(data, seq)){
-                if(seq.size() > 1){
-                    seq.remove(this.data.get(i));
-                    i--;
-                }
-                result.add(seq);
-                seq = new ArrayList<>();
-            }
-        }
-        result.add(seq);
-
-        return this;
-    }
-
-    //O(n)
-    private boolean existSequence(List<Pair<String, String>> data, List<Pair<String, String>> seq) {
-        for(int i=0; i<data.size(); i++){
-            int j;
-            for(j=0; j<seq.size() && i<data.size(); j++, i++){
-                if(!(data.get(i) != seq.get(j) && data.get(i).getKey().equals(seq.get(j).getKey()))){
-                    break;
-                }
-            }
-            if(j==seq.size()){
-                return true;
-            } *//*else {
-                i--;
-            }*//*
-        }
-
-        return false;
-    }*/
 }

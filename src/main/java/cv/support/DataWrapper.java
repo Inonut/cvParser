@@ -10,11 +10,11 @@ import java.util.List;
 /**
  * Created by Dragos on 12/12/2016.
  */
-public class StreamWrapper {
+public class DataWrapper {
 
     private List<Pair<Section, SectionContent>> data;
 
-    public StreamWrapper(List<Pair<Section, SectionContent>> data){
+    public DataWrapper(List<Pair<Section, SectionContent>> data){
         this.data = data;
     }
 

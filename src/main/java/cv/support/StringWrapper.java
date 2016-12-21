@@ -8,9 +8,6 @@ import cv.support.section.Section;
 public class StringWrapper {
 
     private String string;
-    private Section section;
-    private int begin;
-    private int end;
 
     public StringWrapper(String str) {
         this.string = str;

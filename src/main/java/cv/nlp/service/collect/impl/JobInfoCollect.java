@@ -3,7 +3,7 @@ package cv.nlp.service.collect.impl;
 import cv.domain.neo4j.JobInfo;
 import cv.support.FindSimilarSequence;
 import cv.support.PeriodePrepare;
-import cv.support.StreamWrapper;
+import cv.support.DataWrapper;
 import cv.nlp.service.collect.Worker;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
@@ -19,12 +19,12 @@ public class JobInfoCollect implements Worker<List<JobInfo>> {
     @Override
     public List<JobInfo> work(List<Pair<Section, SectionContent>> data) {
 
-        StreamWrapper streamData = new StreamWrapper(data);
+        DataWrapper streamData = new DataWrapper(data);
         FindSimilarSequence sequence = new FindSimilarSequence(streamData.collect(Section.WORK_EXPERIENCE)).find();
 
         List<JobInfo> result = new ArrayList<>();
         sequence.getResult().forEach(seq -> {
-            StreamWrapper seqWrapper = new StreamWrapper(seq);
+            DataWrapper seqWrapper = new DataWrapper(seq);
             PeriodePrepare periodePrepare = new PeriodePrepare();
             periodePrepare.split(seqWrapper.collect(Section.PERIODE));
 

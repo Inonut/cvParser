@@ -39,6 +39,7 @@ ext {
     stanfordNER = '3.6.0'
     neo4j = '3.0.7'
     ogm = '2.0.5'
+    tika = '1.13'
 }
 
 dependencies {
@@ -57,9 +58,12 @@ dependencies {
     compile group: 'org.neo4j', name: 'neo4j-ogm-embedded-driver', version: ogm
     compile group: 'org.neo4j', name: 'neo4j-ogm-bolt-driver', version: ogm
 
-
     //stanford ner
     compile group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: stanfordNER
+
+    //tika
+    compile group: 'org.apache.tika', name:'tika-core', version: tika
+    compile group: 'org.apache.tika',name:'tika-parsers', version: tika
 
     //neo4j
     compile group: 'org.neo4j', name: 'neo4j', version: neo4j

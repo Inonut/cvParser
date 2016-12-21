@@ -25,7 +25,7 @@ public class Util {
 
     public static List<String> tokens = Arrays.stream(Section.values()).map(Enum::toString).collect(Collectors.toList());
 
-    public static String[] separators = {"â€“", "-" /*45*/, "–" /*150*/};
+    public static String[] separators = {"â€“", "-" /*45*/, "–" /*150*/, " ", "\n"};
 
     public static String convertToRegex(String str){
         return "(?iu)" + Pattern.quote(str);

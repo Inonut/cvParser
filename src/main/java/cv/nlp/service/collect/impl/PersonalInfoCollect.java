@@ -1,7 +1,7 @@
 package cv.nlp.service.collect.impl;
 
 import cv.domain.neo4j.PersonalInfo;
-import cv.support.StreamWrapper;
+import cv.support.DataWrapper;
 import cv.nlp.service.collect.Worker;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
@@ -19,7 +19,7 @@ public class PersonalInfoCollect implements Worker<PersonalInfo> {
     @Override
     public PersonalInfo work(List<Pair<Section, SectionContent>> data) {
         PersonalInfo personalInfo = new PersonalInfo();
-        StreamWrapper streamData = new StreamWrapper(data);
+        DataWrapper streamData = new DataWrapper(data);
 
         String phoneStr = streamData.collect(Section.PHONE);
         List<String> phone = null;
