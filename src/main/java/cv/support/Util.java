@@ -32,38 +32,6 @@ public class Util {
     }
 
     public static String normalizeString(String str){
-        /*return new String(str)
-                .replace('–', '-')
-                .replace('©', ' ')
-                .replace('’', '\'')
-                .replace('‘', '\'');*/
-
-        /*String retValue = "";
-        String convertValue2 = "";
-        ByteBuffer convertedBytes = null;
-        try {
-
-            CharsetEncoder encoder2 = Charset.forName("Windows-1252").newEncoder();
-            CharsetEncoder encoder3 = Charset.forName("UTF-8").newEncoder();
-            System.out.println("value = " + str);
-
-            assert encoder2.canEncode(str);
-            assert encoder3.canEncode(str);
-
-            ByteBuffer conv1Bytes = encoder2.encode(CharBuffer.wrap(str.toCharArray()));
-
-            retValue = new String(conv1Bytes.array(), Charset.forName("Windows-1252"));
-
-            System.out.println("retValue = " + retValue);
-
-            convertedBytes = encoder3.encode(CharBuffer.wrap(retValue.toCharArray()));
-            convertValue2 = new String(convertedBytes.array(), Charset.forName("UTF-8"));
-            return convertValue2;
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
-
         return str;
     }
 

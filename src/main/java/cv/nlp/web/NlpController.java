@@ -33,12 +33,6 @@ public class NlpController {
         String inputData = Util.normalizeString(new String(Files.readAllBytes(Paths.get("D:\\KEPLER-PROJECTS\\Modules\\LOCAL\\nertrain\\testCV4.txt"))));
         List<Pair<Section, SectionContent>> data = nlpService.classify(inputData);
 
-        //data.forEach(pair -> System.out.printf("--------------\n%s: %s\n", pair.getKey(), pair.getValue()));
-
         nlpService.saveTrain(data, inputData);
-
-      /*  String a = nlpService.processTrainData();
-        String b = nlpService.processCompetencesTrainData();
-        String c = a+b;*/
     }
 }

@@ -1,11 +1,5 @@
 package cv.config.spring;
 
-import org.neo4j.graphdb.GraphDatabaseService;
-import org.neo4j.graphdb.factory.GraphDatabaseBuilder;
-import org.neo4j.graphdb.factory.GraphDatabaseFactory;
-import org.neo4j.graphdb.factory.GraphDatabaseSettings;
-import org.neo4j.io.fs.DefaultFileSystemAbstraction;
-import org.neo4j.kernel.internal.StoreLocker;
 import org.neo4j.ogm.session.SessionFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -17,9 +11,6 @@ import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.annotation.Resource;
-import java.io.File;
-import java.io.IOException;
-import java.util.Random;
 
 /**
  * @author amitrus
@@ -31,17 +22,6 @@ import java.util.Random;
 public class Neo4jContextConfig extends org.springframework.data.neo4j.config.Neo4jConfiguration {
     @Resource
     private Environment env;
-
-/*
-    @Bean(destroyMethod = "shutdown")
-    public GraphDatabaseService graphDatabaseService() {
-        File dbFile = new File(env.getRequiredProperty("database.storage.path"));
-        GraphDatabaseBuilder builder = new GraphDatabaseFactory().newEmbeddedDatabaseBuilder(dbFile);
-        builder.setConfig(GraphDatabaseSettings.allow_store_upgrade, "true");
-
-        return builder.newGraphDatabase();
-    }
-*/
 
     @Bean(name = "neo4jTransactionManager")
     @Qualifier("neo4jTransactionManager")
@@ -65,13 +45,6 @@ public class Neo4jContextConfig extends org.springframework.data.neo4j.config.Ne
         config.set("dbms.allow_format_migration", true);
         return config;
     }
-
-/*
-    @Bean
-    public SessionFactory getSessionFactory() {
-        return new SessionFactory(getConfiguration(), <packages> );
-    }
-*/
 
     @Override
     public SessionFactory getSessionFactory() {

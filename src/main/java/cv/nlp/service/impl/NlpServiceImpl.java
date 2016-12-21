@@ -1,34 +1,26 @@
 package cv.nlp.service.impl;
 
 import cv.dao.repositories.neo4j.CvRepository;
-import cv.domain.neo4j.*;
+import cv.domain.neo4j.Cv;
+import cv.domain.neo4j.PersonalInfo;
 import cv.nlp.service.NlpService;
 import cv.nlp.service.collect.CvBuilder;
 import cv.nlp.service.collect.impl.EducationCollect;
 import cv.nlp.service.collect.impl.JobInfoCollect;
 import cv.nlp.service.collect.impl.LanguageCollect;
 import cv.nlp.service.collect.impl.PersonalInfoCollect;
-import cv.support.StringBuilderWrapper;
 import cv.support.StringWrapper;
-import cv.support.Util;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
 import cv.support.section.impl.ListSection;
 import cv.train.NerClassifier;
 import javafx.util.Pair;
-import org.neo4j.helpers.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 /**
  * Created by Dragos on 12/6/2016.
@@ -42,12 +34,12 @@ public class NlpServiceImpl implements NlpService {
     private CvRepository cvRepository;
 
     @Autowired
-    @Qualifier("trainCvService")
-    private NerClassifier nerClassifierCv;
+    @Qualifier("nerBulkClassifierCvService")
+    private NerClassifier nerBulkClassifierCv;
 
     @Autowired
-    @Qualifier("trainCompetenceService")
-    private NerClassifier nerClassifierCompetence;
+    @Qualifier("nerRetailClassifierCvService")
+    private NerClassifier nerRetailClassifierCv;
 
 
     @Override
@@ -67,7 +59,7 @@ public class NlpServiceImpl implements NlpService {
 
     @Override
     public List<Pair<Section, SectionContent>> classify(String inputData) {
-        List<Pair<Section, SectionContent>> cv = nerClassifierCv.classifyAndPrepareResult(inputData);
+        List<Pair<Section, SectionContent>> cv = nerBulkClassifierCv.classifyAndPrepareResult(inputData);
 
         cv = CvBuilder.groupData(cv, Section.WORK_EXPERIENCE, Section.EDUCATION_AND_TRAINING).getData();
 
@@ -87,7 +79,7 @@ public class NlpServiceImpl implements NlpService {
         if(work != null){
             int index = cv.indexOf(work);
             cv.remove(work);
-            List inputData = nerClassifierCompetence.classifyAndPrepareResult(work.getValue().getContent());
+            List inputData = nerRetailClassifierCv.classifyAndPrepareResult(work.getValue().getContent());
             if(grouping){
                 List content = CvBuilder.groupData(inputData).getData();
                 cv.add(index, new Pair<>(work.getKey(), new ListSection(content)));
@@ -96,174 +88,6 @@ public class NlpServiceImpl implements NlpService {
             }
         }
     }
-
-    /*@Override
-    public String processTrainData() {
-        List<Cv> cvs= Arrays.asList(cvRepository.loadCvs().get(0));
-
-        return cvs.stream().map(cv -> {
-            StringBuilderWrapper cvStrBuilder = new StringBuilderWrapper(collectRedundantWord());
-
-            //personal info
-            PersonalInfo personalInfo = cv.getPersonalInfo();
-            if(personalInfo != null){
-                cvStrBuilder.appendSection(Section.PERSON).append(personalInfo.getName());
-                cvStrBuilder.appendSection(Section.ADRESS).append(personalInfo.getAdress());
-                cvStrBuilder.appendSection(Section.PHONE).append(personalInfo.getPhone1());
-                cvStrBuilder.appendSection(Section.PHONE).append(personalInfo.getPhone2());
-                cvStrBuilder.appendSection(Section.EMAIL).append(personalInfo.getEmail());
-                cvStrBuilder.appendSection(Section.BERTH_DATE).append(personalInfo.getBirthDate());
-            }
-
-            //job info
-            if(cv.getJobInfos() != null){
-                cvStrBuilder.appendSection(Section.WORK_EXPERIENCE);
-                cv.getJobInfos().forEach(jobInfo -> cvStrBuilder
-                        .append(jobInfo.getDateStart() + "-" + jobInfo.getDateEnd())
-                        .append(jobInfo.getJobRole())
-                        .append(jobInfo.getEmployer())
-                        .append(jobInfo.getAdress())
-                        .append(jobInfo.getDescription())
-                );
-            }
-
-
-            //education
-            if(cv.getEducations() != null){
-                cvStrBuilder.appendSection(Section.EDUCATION_AND_TRAINING);
-                cv.getEducations().forEach(education ->  cvStrBuilder
-                        .append(education.getDateStart() + "-" + education.getDateEnd())
-                        .append(education.getCertificate())
-                        .append(education.getAdress())
-                        .append(education.getDescription())
-                );
-            }
-
-            //language
-            if(cv.getLanguages() != null){
-                cvStrBuilder.appendSection(Section.LANGUAGE);
-                cv.getLanguages().forEach(language -> cvStrBuilder
-                        .append(language.getName())
-                        .append(language.getLevel())
-                );
-            }
-
-            cvStrBuilder.appendSection(Section.O, 300);
-
-            return cvStrBuilder.toString();
-        }).reduce(String::concat).orElse("");
-    }
-
-    @Override
-    public String processCompetencesTrainData() {
-        List<Cv> cvs= Arrays.asList(cvRepository.loadCvs().get(0));
-
-        return cvs.stream().map(cv -> {
-            StringBuilderWrapper cvStrBuilder = new StringBuilderWrapper(collectRedundantWord());
-
-            //personal info
-            PersonalInfo personalInfo = cv.getPersonalInfo();
-            if(personalInfo != null){
-                cvStrBuilder.appendSection(Section.PERSON).append(personalInfo.getName());
-                cvStrBuilder.appendSection(Section.ADRESS).append(personalInfo.getAdress());
-                cvStrBuilder.appendSection(Section.PHONE).append(personalInfo.getPhone1());
-                cvStrBuilder.appendSection(Section.PHONE).append(personalInfo.getPhone2());
-                cvStrBuilder.appendSection(Section.EMAIL).append(personalInfo.getEmail());
-                cvStrBuilder.appendSection(Section.BERTH_DATE).append(personalInfo.getBirthDate());
-            }
-
-            //job info
-            if(cv.getJobInfos() != null) {
-                cv.getJobInfos().forEach(jobInfo -> {
-                    cvStrBuilder.appendSection(Section.PERIODE).append(jobInfo.getDateStart() + "-" + jobInfo.getDateEnd());
-                    cvStrBuilder.appendSection(Section.JOB_ROLE).append(jobInfo.getJobRole());
-                    cvStrBuilder.appendSection(Section.ANGAJATOR).append(jobInfo.getEmployer());
-                    cvStrBuilder.appendSection(Section.ADRESS).append(jobInfo.getAdress());
-                    cvStrBuilder.appendSection(Section.DESCRIPTION).append(jobInfo.getDescription());
-                });
-            }
-
-            //education
-            if(cv.getEducations() != null) {
-                cv.getEducations().forEach(education -> {
-                    cvStrBuilder.appendSection(Section.PERIODE).append(education.getDateStart() + "-" + education.getDateEnd());
-                    cvStrBuilder.appendSection(Section.CERTIFICATE).append(education.getCertificate());
-                    cvStrBuilder.appendSection(Section.ADRESS).append(education.getAdress());
-                    cvStrBuilder.appendSection(Section.DESCRIPTION).append(education.getDescription());
-                });
-            }
-
-            //language
-            if(cv.getLanguages() != null) {
-                cv.getLanguages().forEach(language -> {
-                    cvStrBuilder.appendSection(Section.LANGUAGE_NAME).append(language.getName());
-                    cvStrBuilder.appendSection(Section.LANGUAGE_LEVEL).append(language.getLevel());
-                });
-            }
-
-            cvStrBuilder.appendSection(Section.O, 300);
-
-            return cvStrBuilder.toString();
-        }).reduce(String::concat).orElse("");
-    }
-
-
-    public List<String> collectRedundantWord() {
-
-        List<Cv> cvs= Arrays.asList(cvRepository.loadCvs().get(0));
-
-        return cvs.stream().flatMap(cv -> {
-
-            List<String> delim = new ArrayList<String>();
-            //personal info
-            PersonalInfo personalInfo = cv.getPersonalInfo();
-            if(personalInfo != null){
-                delim.add(personalInfo.getName());
-                delim.add(personalInfo.getAdress());
-                delim.add(personalInfo.getPhone1());
-                delim.add(personalInfo.getPhone2());
-                delim.add(personalInfo.getEmail());
-                delim.add(personalInfo.getBirthDate());
-            }
-
-            //job info
-            if(cv.getJobInfos() != null){
-                cv.getJobInfos().forEach(jobInfo -> {
-                    delim.add(jobInfo.getPeriode());
-                    delim.add(jobInfo.getJobRole());
-                    delim.add(jobInfo.getEmployer());
-                    delim.add(jobInfo.getAdress());
-                    delim.add(jobInfo.getDescription());
-                });
-            }
-
-
-            //education
-            if(cv.getEducations() != null){
-                cv.getEducations().forEach(education -> {
-                    delim.add(education.getPeriode());
-                    delim.add(education.getCertificate());
-                    delim.add(education.getAdress());
-                    delim.add(education.getDescription());
-                });
-            }
-
-            //language
-            if(cv.getLanguages() != null){
-                cv.getLanguages().forEach(language -> {
-                    delim.add(language.getName());
-                    delim.add(language.getLevel());
-                });
-            }
-
-            String pattern = delim.stream().filter(Objects::nonNull).map(Util::convertToRegex).collect(Collectors.joining("|"));
-            String[] words = cv.getInputData().replaceAll(pattern, "").split(" |\n");
-
-            return Arrays.stream(words);
-
-        }).collect(Collectors.toList());
-    }*/
-
 
     @Override
     public String processTrainData() {

@@ -1,4 +1,4 @@
-package cv.nlp.service.collect;
+package cv.support;
 
 import cv.support.Util;
 

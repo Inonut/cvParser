@@ -1,9 +1,8 @@
-package cv.nlp.service.collect;
+package cv.support;
 
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
 import javafx.util.Pair;
-import org.neo4j.cypher.internal.frontend.v2_3.ast.functions.Str;
 
 import java.util.ArrayList;
 import java.util.List;

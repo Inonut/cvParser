@@ -1,11 +1,10 @@
 package cv.nlp.service.collect.impl;
 
 import cv.domain.neo4j.JobInfo;
-import cv.nlp.service.collect.FindSimilarSequence;
-import cv.nlp.service.collect.PeriodePrepare;
-import cv.nlp.service.collect.StreamWrapper;
+import cv.support.FindSimilarSequence;
+import cv.support.PeriodePrepare;
+import cv.support.StreamWrapper;
 import cv.nlp.service.collect.Worker;
-import cv.support.Util;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
 import javafx.util.Pair;

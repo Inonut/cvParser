@@ -1,7 +1,5 @@
 package cv.domain.neo4j;
 
-import org.springframework.data.neo4j.annotation.QueryResult;
-
 /**
  * Created by Dragos on 12/12/2016.
  */

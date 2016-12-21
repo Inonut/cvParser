@@ -1,7 +1,7 @@
 package cv.nlp.service.collect.impl;
 
 import cv.domain.neo4j.PersonalInfo;
-import cv.nlp.service.collect.StreamWrapper;
+import cv.support.StreamWrapper;
 import cv.nlp.service.collect.Worker;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;

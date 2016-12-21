@@ -1,8 +1,5 @@
 package cv.domain.neo4j;
 
-import org.neo4j.cypher.internal.frontend.v2_3.ast.functions.Str;
-import org.springframework.data.neo4j.annotation.QueryResult;
-
 /**
  * Created by Dragos on 12/15/2016.
  */
