@@ -1,0 +1,82 @@
+plugins {
+    id 'java' // or 'groovy' Must be explicitly applied
+    id "com.github.johnrengelman.shadow" version "1.2.4"
+    id "io.spring.dependency-management" version "0.6.1.RELEASE"
+    id "com.eriwen.gradle.js" version "2.14.1"
+    id 'com.craigburke.client-dependencies' version '1.2.0'
+}
+
+group 'nertrain'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: "io.spring.dependency-management"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url 'https://mvnrepository.com/'
+    }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom('io.spring.platform:platform-bom:2.0.8.RELEASE') {
+            //bomProperty 'spring.version', '4.3.3.RELEASE'
+            bomProperties([
+                    'spring.version': '4.3.4.RELEASE',
+                    'spring-data-releasetrain.version' : 'Hopper-SR5'
+            ])
+        }
+    }
+}
+
+ext {
+    stanfordNER = '3.6.0'
+    neo4j = '3.0.7'
+    ogm = '2.0.5'
+}
+
+dependencies {
+
+    compile 'org.springframework:spring-context-support'
+    compile 'org.springframework:spring-webmvc'
+    compile 'org.springframework:spring-beans'
+
+    compile 'com.fasterxml.jackson.core:jackson-core:2.8.3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.3'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.8.3'
+
+    compile 'org.springframework.data:spring-data-neo4j'//:4.1.4.RELEASE'
+    compile group: 'org.neo4j', name: 'neo4j-ogm-core', version: ogm
+    compile group: 'org.neo4j', name: 'neo4j-ogm-http-driver', version: ogm
+    compile group: 'org.neo4j', name: 'neo4j-ogm-embedded-driver', version: ogm
+    compile group: 'org.neo4j', name: 'neo4j-ogm-bolt-driver', version: ogm
+
+
+    //stanford ner
+    compile group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: stanfordNER
+
+    //neo4j
+    compile group: 'org.neo4j', name: 'neo4j', version: neo4j
+    compile group: 'org.neo4j', name: 'neo4j-shell', version: neo4j
+    compile group: 'org.neo4j', name: 'neo4j-cypher', version: neo4j
+    compile group: 'org.neo4j', name: 'neo4j-graphdb-api', version: neo4j
+
+    //Logging
+    compile 'commons-logging:commons-logging:1.2'
+    compile 'log4j:log4j:1.2.17'
+    compile 'org.slf4j:slf4j-log4j12:1.7.18'
+
+    //Server
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+
+    //Test
+    testCompile 'org.springframework:spring-test'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.21'
+}
