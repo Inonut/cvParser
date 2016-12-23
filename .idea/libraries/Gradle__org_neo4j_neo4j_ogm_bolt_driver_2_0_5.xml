@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.neo4j:neo4j-ogm-bolt-driver:2.0.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-bolt-driver/2.0.5/c12fcaa3a8029efe4323bc6279a87ac84d276fb9/neo4j-ogm-bolt-driver-2.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-bolt-driver/2.0.5/db6942c8085c126dc91ee5392bcdc2218ba65bcf/neo4j-ogm-bolt-driver-2.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
