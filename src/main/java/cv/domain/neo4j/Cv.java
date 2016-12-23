@@ -1,7 +1,9 @@
 package cv.domain.neo4j;
 
+import org.neo4j.ogm.annotation.Property;
 import org.neo4j.ogm.annotation.Relationship;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 /**
@@ -9,7 +11,9 @@ import java.util.List;
  */
 public class Cv extends DomainObject{
 
-    private String inputData;
+    //TODO: de schimbat in int[]
+    @Property
+    private byte[] inputData;
 
     @Relationship(type="HAS", direction=Relationship.OUTGOING)
     private PersonalInfo personalInfo;
@@ -56,10 +60,19 @@ public class Cv extends DomainObject{
     }
 
     public String getInputData() {
-        return inputData;
+        try {
+            return new String(inputData, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return new String(inputData);
     }
 
     public void setInputData(String inputData) {
-        this.inputData = inputData;
+        try {
+            this.inputData = inputData.getBytes("UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
     }
 }
