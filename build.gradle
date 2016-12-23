@@ -40,6 +40,7 @@ ext {
     neo4j = '3.0.7'
     ogm = '2.0.5'
     tika = '1.13'
+    jackson = '2.8.5'
 }
 
 dependencies {
@@ -48,10 +49,12 @@ dependencies {
     compile 'org.springframework:spring-webmvc'
     compile 'org.springframework:spring-beans'
 
-    compile 'com.fasterxml.jackson.core:jackson-core:2.8.3'
-    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.3'
-    compile 'com.fasterxml.jackson.core:jackson-annotations:2.8.3'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jackson
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jackson
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: jackson
 
+//    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.0'
+    
     compile 'org.springframework.data:spring-data-neo4j'//:4.1.4.RELEASE'
     compile group: 'org.neo4j', name: 'neo4j-ogm-core', version: ogm
     compile group: 'org.neo4j', name: 'neo4j-ogm-http-driver', version: ogm

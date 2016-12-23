@@ -47,7 +47,7 @@ public class NerContextConfig {
         nerBulkClassifierCv = initTrain(nlpService.processTrainData());
     }
 
-    private synchronized NerClassifier initTrain(String data) {
+    private NerClassifier initTrain(String data) {
         NerClassifier nerClassifier = new NerClassifier(trainProperties);
         String preparedData = nerClassifier.prepareData(data);
         nerClassifier.train(preparedData);

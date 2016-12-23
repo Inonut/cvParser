@@ -32,6 +32,11 @@ public class Util {
     }
 
     public static String normalizeString(String str){
+        try {
+            return new String(str.getBytes("UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         return str;
     }
 

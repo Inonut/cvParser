@@ -31,7 +31,7 @@ public class NlpController {
     @RequestMapping("/classify")
     public void classify() throws IOException {
 //        String inputData = Util.normalizeString(new String(Files.readAllBytes(Paths.get("D:\\KEPLER-PROJECTS\\Modules\\LOCAL\\nertrain\\testCV4.txt"))));
-        String inputData = Util.normalizeString(new TikaExtraction().perform(new File("D:\\KEPLER-PROJECTS\\Modules\\LOCAL\\nertrain\\testCV5.pdf")));
+        String inputData = Util.normalizeString(new TikaExtraction().perform(new File("D:\\KEPLER-PROJECTS\\Modules\\LOCAL\\nertrain\\testCV4.pdf")));
         List<Pair<Section, SectionContent>> data = nlpService.classify(inputData);
 
         nlpService.saveTrain(data, inputData);
