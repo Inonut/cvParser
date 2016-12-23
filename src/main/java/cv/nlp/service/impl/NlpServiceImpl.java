@@ -196,4 +196,8 @@ public class NlpServiceImpl implements NlpService {
         }).reduce(String::concat).orElse("");
     }
 
+    @Override
+    public void clear() {
+        cvRepository.deleteAll();
+    }
 }

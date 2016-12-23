@@ -10,6 +10,9 @@ import org.springframework.core.io.ClassPathResource;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Properties;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -39,12 +42,25 @@ public class NerContextConfig {
 
     @PostConstruct
     private void trainNerRetailClassifierCv() {
-        nerRetailClassifierCv = initTrain(nlpService.processCompetencesTrainData());
+//        nerRetailClassifierCv = initTrain(nlpService.processCompetencesTrainData());
+        nerRetailClassifierCv = initTrain(new File("/home/dragos/IdeaProjects/cvParser/src/main/resources/remove/train.txt"));
     }
 
     @PostConstruct
     private void trainNerBulkClassifierCv() {
-        nerBulkClassifierCv = initTrain(nlpService.processTrainData());
+//        nerBulkClassifierCv = initTrain(nlpService.processTrainData());
+        nerBulkClassifierCv = initTrain(new File("/home/dragos/IdeaProjects/cvParser/src/main/resources/remove/train3.txt"));
+    }
+
+    private NerClassifier initTrain(File file) {
+        String data= "";
+        try {
+            data = new String(Files.readAllBytes(file.toPath()), "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return initTrain(data);
     }
 
     private NerClassifier initTrain(String data) {

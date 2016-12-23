@@ -17,172 +17,172 @@
           <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
         </element>
         <element id="directory" name="lib">
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.3.4.RELEASE/cba7cf5a6363fb62e06750383340c94a12d8e9b5/spring-context-support-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.4.RELEASE/79529d7ea72045e92e3dbeb0f4f6919093f47137/spring-webmvc-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.4.RELEASE/4fbf4327d6c7f81c821f2d56e8695d394c7b930a/spring-beans-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.5/60d059f5d2930ccd1ef03535b713fd9f933d1ba7/jackson-core-2.8.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.5/b3035f37e674c04dafe36a660c3815cc59f764e2/jackson-databind-2.8.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.5/9d82ff47bc2c2d3b5b6a6618fe636782bbcd5b07/jackson-annotations-2.8.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-neo4j/4.1.5.RELEASE/63b2254ac0b3893d1de92bc3dfb3924ef39b4f5/spring-data-neo4j-4.1.5.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-core/2.0.5/6a39d70a484cbb1dcd76639c01325a729ed2193e/neo4j-ogm-core-2.0.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-http-driver/2.0.5/1ea4c02033a2560283df170544a0b180bfe9f1c3/neo4j-ogm-http-driver-2.0.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-embedded-driver/2.0.5/d43ab050372f7e6f857ac35256b572a66b4b29fa/neo4j-ogm-embedded-driver-2.0.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-bolt-driver/2.0.5/c12fcaa3a8029efe4323bc6279a87ac84d276fb9/neo4j-ogm-bolt-driver-2.0.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.stanford.nlp/stanford-corenlp/3.6.0/78d130323856e71e4223ab4962a3f86bc98bd8a/stanford-corenlp-3.6.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-core/1.13/1305c798d41d1d7bbf12cb7c0ca184c98eed25ad/tika-core-1.13.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parsers/1.13/374fde67b9d35f785534b0e6c4953533c31bab5f/tika-parsers-1.13.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j/3.0.7/69b3839c275fa28775fc08bc285da2991c4782d9/neo4j-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-shell/3.0.7/b7c4b9aa9f35b87669252e563c5bc3b007bba83f/neo4j-shell-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher/3.0.7/97d3fb56dc66742c961ba3824f3d7b07b1b1b3d8/neo4j-cypher-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-graphdb-api/3.0.7/43df1c9fae063d2dd25caa767eeaf169485e6712/neo4j-graphdb-api-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.18/1afd498e56689f56d2205d16a606e58db20698ac/slf4j-log4j12-1.7.18.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.4.RELEASE/c8086505715fba4927fed3d7e3314692817413b6/spring-context-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.4.RELEASE/da373e491d3863477568896089ee9457bc316783/spring-core-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.4.RELEASE/43f3d4a43a8dcc91137e092b981101332a645e4b/spring-aop-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.4.RELEASE/5573955b5373669be0e352a1eb5dc9c87b069cb6/spring-expression-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.4.RELEASE/719f05404ba8a9de1516398d31d9622042584f0d/spring-web-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.12.5.RELEASE/29ed49845ecb804c140a8fea7bb4a524b0502135/spring-data-commons-1.12.5.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.4.RELEASE/303d00338193c04312426325121572d2fc1d4ec5/spring-tx-4.3.4.RELEASE.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.21/331b564a3a42f002a0004b039c1c430da89062cd/jcl-over-slf4j-1.7.21.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-api/2.0.5/d65a988d96286e3b5c2be60ba9fd463972767cf9/neo4j-ogm-api-2.0.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-ogm-compiler/2.0.5/bade54c4a0dd2e097bf73e016a47c8fac60ba5e3/neo4j-ogm-compiler-2.0.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/733db77aa8d9b2d68015189df76ab06304406e50/httpclient-4.5.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j.driver/neo4j-java-driver/1.0.5/ee5918ec84080ed8ac32f532cac415bf6be85c21/neo4j-java-driver-1.0.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.io7m.xom/xom/1.2.10/4165e25bef19aad134f6498cc277110b9bc5e52b/xom-1.2.10.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.2/d27c24204c5e507b16fec01006b3d0f1ec42aed4/joda-time-2.8.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.jollyday/jollyday/0.4.7/aa1c57aa11494985854b8ec8d39574754db67f22/jollyday-0.4.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.efficient-java-matrix-library/ejml/0.23/fb9a880674f0d241d727ee2bc5e6a839d3007fe8/ejml-0.23.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.json/javax.json-api/1.0/a74939ecbf7294b40accb4048929577f5ddcee2/javax.json-api-1.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.gagravarr/vorbis-java-tika/0.8/4ddbb27ac5884a0f0398a63d46a89d3bc87dc457/vorbis-java-tika-0.8.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.healthmarketscience.jackcess/jackcess/2.1.3/fe8553847c6744d61e071ef11a6a64010731d241/jackcess-2.1.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.healthmarketscience.jackcess/jackcess-encrypt/2.1.1/effacd7133ab76ee54c0488dd952b177bfeb85a3/jackcess-encrypt-2.1.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jmatio/jmatio/1.0/df72993ea17d34c3bacd983558d2970a866abaf6/jmatio-1.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-core/0.7.2/a81264fe0265ebe8fd1d8128aad06dc320de6eef/apache-mime4j-core-0.7.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-dom/0.7.2/1c289aa264548a0a1f1b43685a9cb2ab23f67287/apache-mime4j-dom-0.7.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.11/f43ce4c878078cbcfbb061353aa672a4c8e81443/commons-compress-1.11.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.5/9c64274b7dbb65288237216e3fae7877fd3f2bee/xz-1.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.1/dbc69649118b7eff278f228c070a40ee559e1f62/pdfbox-2.0.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox-tools/2.0.1/a585a59c58f822884b1c5e56b670efa9241b699d/pdfbox-tools-2.0.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/jempbox/1.8.12/426450c573c19f6f2c751a7a52c11931b712c9f6/jempbox-1.8.12.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk15on/1.54/9d9b5432b4b29ef4a853223bc6e19379ef116cca/bcmail-jdk15on-1.54.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.54/1acdedeb89f1d950d67b73d481eb7736df65eedb/bcprov-jdk15on-1.54.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi/3.11/51058d9db469437a5ed0aa508e7de8937019e1d9/poi-3.11.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-scratchpad/3.15-beta1/f4e276aaf97a60a1156388c9e38069122b7ea914/poi-scratchpad-3.15-beta1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/3.11/e87975291fbb65888468b09fda2cf00e2996c2a0/poi-ooxml-3.11.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ccil.cowan.tagsoup/tagsoup/1.2.1/5584627487e984c03456266d3f8802eb85a9ce97/tagsoup-1.2.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.4/da08b8cce7bbf903602a25a3a163ae252435795/asm-5.0.4.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.mp4parser/isoparser/1.1.18/c74bdac64b22f1e245a7657149a43437aae4a9d3/isoparser-1.1.18.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.drewnoakes/metadata-extractor/2.8.1/120630f96316e0f173aedf0c88bb06c5e146ad96/metadata-extractor-2.8.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.l3s.boilerpipe/boilerpipe/1.1.0/f62cb75ed52455a9e68d1d05b84c500673340eb2/boilerpipe-1.1.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rometools/rome/1.5.1/cc3489f066749bede7fc81f4e80c0d8c9534a210/rome-1.5.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.gagravarr/vorbis-java-core/0.8/7e9937c2575cda2e3fc116415117c74f23e43fa6/vorbis-java-core-0.8.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/cd49678784c46aa8789c060538e0154013bb421b/juniversalchardet-1.0.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codelibs/jhighlight/1.0.2/992a8a8add10468930efc1f110f2895f68258a1e/jhighlight-1.0.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pff/java-libpst/0.8.1/ad31986653dac9cb5132ea5b2999c20b4b286255/java-libpst-0.8.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.junrar/junrar/0.7/18cc717b85af0b12ba922abf415c2ff4716f8219/junrar-0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.cxf/cxf-rt-rs-client/3.0.3/45eabb80eb52ac54111c71e0d6f34c9c93f99b0d/cxf-rt-rs-client-3.0.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-tools/1.5.3/826d34168b0e4870c9f599ed7f2b8fee4194ba3b/opennlp-tools-1.5.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-exec/1.3/8dfb9facd0830a27b1b5f29f84593f0aeee7773b/commons-exec-1.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20140107/d1ffca6e2482b002702c6a576166fd685e3370e3/json-20140107.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.ucar/netcdf4/4.5.5/675d63ecc857c50dd50858011b670160aa30b62/netcdf4-4.5.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.ucar/grib/4.5.5/cfe552910e9a8d57ce71134796abb281a74ead16/grib-4.5.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.ucar/cdm/4.5.5/af1748a3d024069cb7fd3fc2591efe806c914589/cdm-4.5.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.ucar/httpservices/4.5.5/ee5f217be599e5e03f7f0e55e03f9e721a154f62/httpservices-4.5.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-csv/1.0/8a0796ad6541a144eb1c00b93e06fbac03a9f313/commons-csv-1.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sis.core/sis-utility/0.6/e049cdb56758f3a92b48af0f7741d102a90152/sis-utility-0.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sis.storage/sis-netcdf/0.6/c847a664eb707b0663dec4a9257419842a33e903/sis-netcdf-0.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sis.core/sis-metadata/0.6/97cde9b02f2548567a06f3ecd42caa39a94ffaf4/sis-metadata-0.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opengis/geoapi/3.0.0/a04e0f361627fb33a140b5aa4c019741f905577/geoapi-3.0.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-kernel/3.0.7/a1792be71abf1ef43613cb9cbb7eb7bb78cd0010/neo4j-kernel-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-lucene-index/3.0.7/6b2fb4ff2ba56dd15a5158eb01a102d5a322e60b/neo4j-lucene-index-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-graph-algo/3.0.7/6225958970c8c319f9999c8012a42eacb9bb7b4e/neo4j-graph-algo-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-udc/3.0.7/a0a826f35008b7174bc15487b4ad9c8c56d9e4d7/neo4j-udc-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-graph-matching/3.0.7/c43a7456d17823cbbf141410b2d2e000c5a2722f/neo4j-graph-matching-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-jmx/3.0.7/6f151dbf7dfcf9e5539cc3f80c29de0300bf12fe/neo4j-jmx-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-consistency-check/3.0.7/3904c254afcb2b111502dca3cbbf8cf5e7344129/neo4j-consistency-check-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jline/jline/2.11/9504d5e2da5d78237239c5226e8200ec21182040/jline-2.11.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.8/ddd5a8bced249bedd86fb4578a39b9fb71480573/scala-library-2.11.8.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.8/b74530deeba742ab4f3134de0c2da0edc49ca361/scala-reflect-2.11.8.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-codegen/3.0.7/615f73af0061fbf7420e48d32ceb94804660da6b/neo4j-codegen-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-compiler-2.3/2.3.7/df400e0017ebddfac8d514698b31e3d7d0e4673d/neo4j-cypher-compiler-2.3-2.3.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-compiler-3.0/3.0.7/9e383d49447ee85858d15f6bebcafd1c4cb7f6c2/neo4j-cypher-compiler-3.0-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.parboiled/parboiled-scala_2.11/1.1.7/4e14ecb11f40f25216ce01dc349f541bc801354f/parboiled-scala_2.11-1.1.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/c23708cdb9e80a144db433e23344a788a1fd6599/opencsv-2.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4.2/2eaf3d3c9746d526ff7e5b93931d482c3887e6ac/concurrentlinkedhashmap-lru-1.4.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-common/3.0.7/49b0c0a099856b02760cc7860c459bb650343d2c/neo4j-common-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-resource/3.0.7/988fc4f7532ef587151ad671b37107d5caac724d/neo4j-resource-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-collections/3.0.7/18f044440a08cef3ca53cc8cf5d2218534c40ff3/neo4j-collections-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-primitive-collections/3.0.7/745ab4ee0c91afdffd75a452a7418ba3709cbdaf/neo4j-primitive-collections-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.5/e7501a1b34325abb00d17dde96150604a0658b54/httpcore-4.4.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.8.0/cfd3ebe2f8034e660344f9108c3e2daf78c29cc3/xercesImpl-2.8.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xalan/xalan/2.7.0/a33c0097f1c70b20fa7ded220ea317eb3500515e/xalan-2.7.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.7/2f51c4bb4724ea408096ee9100ff2827e07e5b7c/jaxb-api-2.2.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/fontbox/2.0.1/b9d4f0993e015f3f1ce0be9e7300cf62dd7a7f15/fontbox-2.0.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox-debugger/2.0.1/97d2f7d314d7feab1d123077b4ab3008068f3f6a/pdfbox-debugger-2.0.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.47/cd204e6f26d2bbf65ff3a30de8831d3a1344e851/bcpkix-jdk15on-1.47.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml-schemas/3.11/4f015e9125a65351a2e1d27c1f8c6af0ff4a34c8/poi-ooxml-schemas-3.11.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adobe.xmp/xmpcore/5.1.2/55615fa2582424e38705487d1d3969af8554f637/xmpcore-5.1.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rometools/rome-utils/1.5.1/3a3d6473a2f5d55fb31bf6c269af963fdea13b54/rome-utils-1.5.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging-api/1.1/7d4cf5231d46c8524f9b9ed75bb2d1c69ab93322/commons-logging-api-1.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-vfs2/2.0/b5af3b9c96b060d77c68fa5ac9384b402dd58013/commons-vfs2-2.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.cxf/cxf-rt-transports-http/3.0.3/d0fe9957966496bcc9550dddfbe5100d84105d75/cxf-rt-transports-http-3.0.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.cxf/cxf-core/3.0.3/d1c97f02c6ca0bab8b3c5315237c510523b86310/cxf-core-3.0.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.cxf/cxf-rt-frontend-jaxrs/3.0.3/284a35801aef259c0d61edb938865b5b125403ac/cxf-rt-frontend-jaxrs-3.0.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-maxent/3.0.3/55e39e6b46e71f35229cdd6950e72d8cce3b5fd4/opennlp-maxent-3.0.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jwordnet/jwnl/1.3.3/7108e5b6a8875fe0488d942238575407c7ab8649/jwnl-1.3.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/afba4942caaeaf46aab0b976afd57cc7c181467e/jcip-annotations-1.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/2.5.0/a10732c76bfacdbd633a7eb0f7968b1059a65dfa/protobuf-java-2.5.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/6f14738ec2e9dd0011e343717fa624a10f8aab64/jdom2-2.0.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.7.2/d7e275ba05aa380ca254f72d0c0ffebaedc3adcf/jsoup-1.7.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.ucar/jj2000/5.2/b857c9bdf12fe17d8ef98218eaa39e6a0c6ff493/jj2000-5.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.itadaki/bzip2/0.9.1/47ca95f71e3ccae756c4a24354d48069c58f475c/bzip2-0.9.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.ucar/udunits/4.5.5/d8c8d65ade13666eedcf764889c69321c247f153/udunits-4.5.5.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.2.3/d4d8ea088852beeb89f54d3040fe1cbaa8491dcd/quartz-2.2.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache-core/2.6.2/3baecd92015a9f8fe4cf51c8b5d3a5bddcdd3e86/ehcache-core-2.6.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.35/47592e181b0bdbbeb63029e08c5e74f6803c4edd/jcommander-1.35.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.2/22b4c53dd9b6761024258de8f9240c3dce6ea368/httpmime-4.5.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sis.storage/sis-storage/0.6/1996e6209d309380cd191d4483ca19cc25c30fe3/sis-storage-0.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sis.core/sis-referencing/0.6/ca59408047b7c3685661959b5858297e047a4046/sis-referencing-0.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.measure/jsr-275/0.9.3/ab2fb094fc5297ae5636ef6ed0d6051d5a656588/jsr-275-0.9.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-io/3.0.7/a542166de7763b176751839c69bd1ef6c9cbb246/neo4j-io-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-csv/3.0.7/fad9e07b3dabf68df00c02d02001050e533657b6/neo4j-csv-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-logging/3.0.7/7712e3e2e88160c469c67b65e199d6853afd3f35/neo4j-logging-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-security/3.0.7/ea34c002a706674b634d14c2096b0e98ba4dcb0a/neo4j-security-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-lucene-upgrade/3.0.7/243529f062575c809eda41e88a2b274c3f0fce01/neo4j-lucene-upgrade-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/5.5.0/1e0e8243a4410be20c34683034fafa7bb52e55cc/lucene-analyzers-common-5.5.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/5.5.0/a74fd869bb5ad7fe6b4cd29df9543a34aea81164/lucene-core-5.5.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/5.5.0/fddc49725b562fd48dff0cff004336ad2a090a4/lucene-queryparser-5.5.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-codecs/5.5.0/b6d6b847a516b5fee88f7cfcf173cf9564233471/lucene-codecs-5.5.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-frontend-2.3/2.3.7/99462895c09a6ca9a4b355b13005f85e33511b51/neo4j-cypher-frontend-2.3-2.3.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-frontend-3.0/3.0.7/2a15e9129eb29c22001d3d1cd8cf783d6dbf40d7/neo4j-cypher-frontend-3.0-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.parboiled/parboiled-core/1.1.7/a60ff9a54cbeb30ec44c89e16ac4c35913cbad5a/parboiled-core-1.1.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-unsafe/3.0.7/490f97f7417b8565fdfeba813675b3e102c421e6/neo4j-unsafe-3.0.7.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.xmlbeans/xmlbeans/2.6.0/29e80d2dd51f9dcdef8f9ffaee0d4dc1c9bbfc87/xmlbeans-2.6.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven.scm/maven-scm-api/1.4/e294693ce217bd6f470b728127854e6ca787fd29/maven-scm-api-1.4.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven.scm/maven-scm-provider-svnexe/1.4/b3213b40157b701ba079b738baac391e41418c18/maven-scm-provider-svnexe-1.4.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/woodstox-core-asl/4.2.1/ce8115adb515bc740dbe726a918983c48c9752d/woodstox-core-asl-4.2.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.ws.xmlschema/xmlschema-core/2.1.0/93415557e2867469c33be98ab330655dd714297d/xmlschema-core-2.1.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.0.1/104e9c2b5583cfcfeac0402316221648d6d8ea6b/javax.ws.rs-api-2.0.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/c3p0/c3p0/0.9.1.1/302704f30c6e7abb7a0457f7771739e03c973e80/c3p0-0.9.1.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/5.5.0/68480974b2f54f519763632a7c1c5d51cbff3805/lucene-backward-codecs-5.5.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/1.5.6/8fb6b798a4036048b3005e058553bf21a87802ed/plexus-utils-1.5.6.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven.scm/maven-scm-provider-svn-commons/1.4/54bc1dc24c5d205b4d251a83f4ea63808c21a628/maven-scm-provider-svn-commons-1.4.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/regexp/regexp/1.3/973df2b78b67bcd3144c3dbbb88da691065a3f8d/regexp-1.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/ac19014b1e6a7c08aad07fe114af792676b685b7/stax2-api-3.1.4.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/2.0.2/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-2.0.2.jar" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.5" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.5" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.5" />
+          <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-neo4j:4.1.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-ogm-core:2.0.5" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-ogm-http-driver:2.0.5" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-ogm-embedded-driver:2.0.5" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-ogm-bolt-driver:2.0.5" />
+          <element id="library" level="project" name="Gradle: edu.stanford.nlp:stanford-corenlp:3.6.0" />
+          <element id="library" level="project" name="Gradle: org.apache.tika:tika-core:1.13" />
+          <element id="library" level="project" name="Gradle: org.apache.tika:tika-parsers:1.13" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-shell:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-cypher:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-graphdb-api:3.0.7" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-log4j12:1.7.18" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-commons:1.12.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.21" />
+          <element id="library" level="project" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.21" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-ogm-api:2.0.5" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-ogm-compiler:2.0.5" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-lang3:3.3.2" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-collections4:4.1" />
+          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpclient:4.5.2" />
+          <element id="library" level="project" name="Gradle: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Gradle: org.neo4j.driver:neo4j-java-driver:1.0.5" />
+          <element id="library" level="project" name="Gradle: com.io7m.xom:xom:1.2.10" />
+          <element id="library" level="project" name="Gradle: joda-time:joda-time:2.8.2" />
+          <element id="library" level="project" name="Gradle: de.jollyday:jollyday:0.4.7" />
+          <element id="library" level="project" name="Gradle: com.googlecode.efficient-java-matrix-library:ejml:0.23" />
+          <element id="library" level="project" name="Gradle: javax.json:javax.json-api:1.0" />
+          <element id="library" level="project" name="Gradle: org.gagravarr:vorbis-java-tika:0.8" />
+          <element id="library" level="project" name="Gradle: com.healthmarketscience.jackcess:jackcess:2.1.3" />
+          <element id="library" level="project" name="Gradle: com.healthmarketscience.jackcess:jackcess-encrypt:2.1.1" />
+          <element id="library" level="project" name="Gradle: net.sourceforge.jmatio:jmatio:1.0" />
+          <element id="library" level="project" name="Gradle: org.apache.james:apache-mime4j-core:0.7.2" />
+          <element id="library" level="project" name="Gradle: org.apache.james:apache-mime4j-dom:0.7.2" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-compress:1.11" />
+          <element id="library" level="project" name="Gradle: org.tukaani:xz:1.5" />
+          <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.10" />
+          <element id="library" level="project" name="Gradle: org.apache.pdfbox:pdfbox:2.0.1" />
+          <element id="library" level="project" name="Gradle: org.apache.pdfbox:pdfbox-tools:2.0.1" />
+          <element id="library" level="project" name="Gradle: org.apache.pdfbox:jempbox:1.8.12" />
+          <element id="library" level="project" name="Gradle: org.bouncycastle:bcmail-jdk15on:1.54" />
+          <element id="library" level="project" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.54" />
+          <element id="library" level="project" name="Gradle: org.apache.poi:poi:3.11" />
+          <element id="library" level="project" name="Gradle: org.apache.poi:poi-scratchpad:3.15-beta1" />
+          <element id="library" level="project" name="Gradle: org.apache.poi:poi-ooxml:3.11" />
+          <element id="library" level="project" name="Gradle: org.ccil.cowan.tagsoup:tagsoup:1.2.1" />
+          <element id="library" level="project" name="Gradle: org.ow2.asm:asm:5.0.4" />
+          <element id="library" level="project" name="Gradle: com.googlecode.mp4parser:isoparser:1.1.18" />
+          <element id="library" level="project" name="Gradle: com.drewnoakes:metadata-extractor:2.8.1" />
+          <element id="library" level="project" name="Gradle: de.l3s.boilerpipe:boilerpipe:1.1.0" />
+          <element id="library" level="project" name="Gradle: com.rometools:rome:1.5.1" />
+          <element id="library" level="project" name="Gradle: org.gagravarr:vorbis-java-core:0.8" />
+          <element id="library" level="project" name="Gradle: com.googlecode.juniversalchardet:juniversalchardet:1.0.3" />
+          <element id="library" level="project" name="Gradle: org.codelibs:jhighlight:1.0.2" />
+          <element id="library" level="project" name="Gradle: com.pff:java-libpst:0.8.1" />
+          <element id="library" level="project" name="Gradle: com.github.junrar:junrar:0.7" />
+          <element id="library" level="project" name="Gradle: org.apache.cxf:cxf-rt-rs-client:3.0.3" />
+          <element id="library" level="project" name="Gradle: org.apache.opennlp:opennlp-tools:1.5.3" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-exec:1.3" />
+          <element id="library" level="project" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" />
+          <element id="library" level="project" name="Gradle: org.json:json:20140107" />
+          <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.3.1" />
+          <element id="library" level="project" name="Gradle: edu.ucar:netcdf4:4.5.5" />
+          <element id="library" level="project" name="Gradle: edu.ucar:grib:4.5.5" />
+          <element id="library" level="project" name="Gradle: edu.ucar:cdm:4.5.5" />
+          <element id="library" level="project" name="Gradle: edu.ucar:httpservices:4.5.5" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-csv:1.0" />
+          <element id="library" level="project" name="Gradle: org.apache.sis.core:sis-utility:0.6" />
+          <element id="library" level="project" name="Gradle: org.apache.sis.storage:sis-netcdf:0.6" />
+          <element id="library" level="project" name="Gradle: org.apache.sis.core:sis-metadata:0.6" />
+          <element id="library" level="project" name="Gradle: org.opengis:geoapi:3.0.0" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-kernel:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-lucene-index:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-graph-algo:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-udc:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-graph-matching:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-jmx:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-consistency-check:3.0.7" />
+          <element id="library" level="project" name="Gradle: jline:jline:2.11" />
+          <element id="library" level="project" name="Gradle: org.scala-lang:scala-library:2.11.8" />
+          <element id="library" level="project" name="Gradle: org.scala-lang:scala-reflect:2.11.8" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-codegen:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-cypher-compiler-2.3:2.3.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-cypher-compiler-3.0:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.parboiled:parboiled-scala_2.11:1.1.7" />
+          <element id="library" level="project" name="Gradle: net.sf.opencsv:opencsv:2.3" />
+          <element id="library" level="project" name="Gradle: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.4.2" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-common:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-resource:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-collections:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-primitive-collections:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpcore:4.4.5" />
+          <element id="library" level="project" name="Gradle: xerces:xercesImpl:2.8.0" />
+          <element id="library" level="project" name="Gradle: xalan:xalan:2.7.0" />
+          <element id="library" level="project" name="Gradle: javax.xml.bind:jaxb-api:2.2.7" />
+          <element id="library" level="project" name="Gradle: commons-lang:commons-lang:2.6" />
+          <element id="library" level="project" name="Gradle: org.apache.pdfbox:fontbox:2.0.1" />
+          <element id="library" level="project" name="Gradle: org.apache.pdfbox:pdfbox-debugger:2.0.1" />
+          <element id="library" level="project" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.47" />
+          <element id="library" level="project" name="Gradle: org.apache.poi:poi-ooxml-schemas:3.11" />
+          <element id="library" level="project" name="Gradle: com.adobe.xmp:xmpcore:5.1.2" />
+          <element id="library" level="project" name="Gradle: com.rometools:rome-utils:1.5.1" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging-api:1.1" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-vfs2:2.0" />
+          <element id="library" level="project" name="Gradle: org.apache.cxf:cxf-rt-transports-http:3.0.3" />
+          <element id="library" level="project" name="Gradle: org.apache.cxf:cxf-core:3.0.3" />
+          <element id="library" level="project" name="Gradle: org.apache.cxf:cxf-rt-frontend-jaxrs:3.0.3" />
+          <element id="library" level="project" name="Gradle: org.apache.opennlp:opennlp-maxent:3.0.3" />
+          <element id="library" level="project" name="Gradle: net.sf.jwordnet:jwnl:1.3.3" />
+          <element id="library" level="project" name="Gradle: net.jcip:jcip-annotations:1.0" />
+          <element id="library" level="project" name="Gradle: net.java.dev.jna:jna:4.1.0" />
+          <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:2.5.0" />
+          <element id="library" level="project" name="Gradle: org.jdom:jdom2:2.0.6" />
+          <element id="library" level="project" name="Gradle: org.jsoup:jsoup:1.7.2" />
+          <element id="library" level="project" name="Gradle: edu.ucar:jj2000:5.2" />
+          <element id="library" level="project" name="Gradle: org.itadaki:bzip2:0.9.1" />
+          <element id="library" level="project" name="Gradle: edu.ucar:udunits:4.5.5" />
+          <element id="library" level="project" name="Gradle: org.quartz-scheduler:quartz:2.2.3" />
+          <element id="library" level="project" name="Gradle: net.sf.ehcache:ehcache-core:2.6.2" />
+          <element id="library" level="project" name="Gradle: com.google.guava:guava:17.0" />
+          <element id="library" level="project" name="Gradle: com.beust:jcommander:1.35" />
+          <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpmime:4.5.2" />
+          <element id="library" level="project" name="Gradle: org.apache.sis.storage:sis-storage:0.6" />
+          <element id="library" level="project" name="Gradle: org.apache.sis.core:sis-referencing:0.6" />
+          <element id="library" level="project" name="Gradle: javax.measure:jsr-275:0.9.3" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-io:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-csv:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-logging:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-security:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-lucene-upgrade:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.apache.lucene:lucene-analyzers-common:5.5.0" />
+          <element id="library" level="project" name="Gradle: org.apache.lucene:lucene-core:5.5.0" />
+          <element id="library" level="project" name="Gradle: org.apache.lucene:lucene-queryparser:5.5.0" />
+          <element id="library" level="project" name="Gradle: org.apache.lucene:lucene-codecs:5.5.0" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-cypher-frontend-2.3:2.3.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-cypher-frontend-3.0:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.parboiled:parboiled-core:1.1.7" />
+          <element id="library" level="project" name="Gradle: org.neo4j:neo4j-unsafe:3.0.7" />
+          <element id="library" level="project" name="Gradle: org.apache.xmlbeans:xmlbeans:2.6.0" />
+          <element id="library" level="project" name="Gradle: org.apache.maven.scm:maven-scm-api:1.4" />
+          <element id="library" level="project" name="Gradle: org.apache.maven.scm:maven-scm-provider-svnexe:1.4" />
+          <element id="library" level="project" name="Gradle: org.codehaus.woodstox:woodstox-core-asl:4.2.1" />
+          <element id="library" level="project" name="Gradle: org.apache.ws.xmlschema:xmlschema-core:2.1.0" />
+          <element id="library" level="project" name="Gradle: javax.ws.rs:javax.ws.rs-api:2.0.1" />
+          <element id="library" level="project" name="Gradle: javax.annotation:javax.annotation-api:1.2" />
+          <element id="library" level="project" name="Gradle: c3p0:c3p0:0.9.1.1" />
+          <element id="library" level="project" name="Gradle: org.apache.lucene:lucene-backward-codecs:5.5.0" />
+          <element id="library" level="project" name="Gradle: org.codehaus.plexus:plexus-utils:1.5.6" />
+          <element id="library" level="project" name="Gradle: org.apache.maven.scm:maven-scm-provider-svn-commons:1.4" />
+          <element id="library" level="project" name="Gradle: regexp:regexp:1.3" />
+          <element id="library" level="project" name="Gradle: org.codehaus.woodstox:stax2-api:3.1.4" />
+          <element id="library" level="project" name="Gradle: xml-apis:xml-apis:2.0.2" />
         </element>
       </element>
     </root>

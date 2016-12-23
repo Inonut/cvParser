@@ -18,4 +18,6 @@ public interface NlpService {
     String processTrainData();
 
     String processCompetencesTrainData();
+
+    void clear();
 }

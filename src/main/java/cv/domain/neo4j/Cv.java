@@ -11,9 +11,9 @@ import java.util.List;
  */
 public class Cv extends DomainObject{
 
-    //TODO: de schimbat in int[]
     @Property
-    private byte[] inputData;
+    private String inputData;
+//    private byte[] inputData;
 
     @Relationship(type="HAS", direction=Relationship.OUTGOING)
     private PersonalInfo personalInfo;
@@ -59,7 +59,7 @@ public class Cv extends DomainObject{
         this.languages = languages;
     }
 
-    public String getInputData() {
+    /*public String getInputData() {
         try {
             return new String(inputData, "UTF-8");
         } catch (UnsupportedEncodingException e) {
@@ -74,5 +74,13 @@ public class Cv extends DomainObject{
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
+    }*/
+
+    public String getInputData() {
+        return inputData;
+    }
+
+    public void setInputData(String inputData) {
+        this.inputData = inputData;
     }
 }

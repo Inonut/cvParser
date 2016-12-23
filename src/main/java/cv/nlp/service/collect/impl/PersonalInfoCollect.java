@@ -3,6 +3,7 @@ package cv.nlp.service.collect.impl;
 import cv.domain.neo4j.PersonalInfo;
 import cv.support.DataWrapper;
 import cv.nlp.service.collect.Worker;
+import cv.support.Util;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
 import javafx.util.Pair;
@@ -24,7 +25,7 @@ public class PersonalInfoCollect implements Worker<PersonalInfo> {
         String phoneStr = streamData.collect(Section.PHONE);
         List<String> phone = null;
         if(phoneStr != null){
-            phone = Arrays.stream(phoneStr.split("\n")).map(String::trim).filter(s -> !"".equals(s)).collect(Collectors.toList());
+            phone = Arrays.stream(phoneStr.split(Arrays.stream(Util.separators).collect(Collectors.joining("|")))).map(String::trim).filter(s -> !"".equals(s)).collect(Collectors.toList());
         }
 
         personalInfo.setName(streamData.collect(Section.PERSON));
