@@ -6,6 +6,7 @@ import cv.support.Util;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
 import cv.tika.TikaExtraction;
+import cv.tika.TikaExtraction2;
 import javafx.util.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,7 +32,7 @@ public class NlpController {
     @RequestMapping("/classify")
     public void classify() throws IOException {
 //        String inputData = Util.normalizeString(new String(Files.readAllBytes(Paths.get("D:\\KEPLER-PROJECTS\\Modules\\LOCAL\\nertrain\\testCV4.txt"))));
-        String inputData = Util.normalizeString(new TikaExtraction().perform(new File("/home/dragos/IdeaProjects/cvParser/testCV5.pdf")));
+        String inputData = Util.normalizeString(new TikaExtraction2().perform(new File("test/linux.txt")));
         List<Pair<Section, SectionContent>> data = nlpService.classify(inputData);
 
         nlpService.saveTrain(data, inputData);

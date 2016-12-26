@@ -42,14 +42,14 @@ public class NerContextConfig {
 
     @PostConstruct
     private void trainNerRetailClassifierCv() {
-//        nerRetailClassifierCv = initTrain(nlpService.processCompetencesTrainData());
-        nerRetailClassifierCv = initTrain(new File("/home/dragos/IdeaProjects/cvParser/src/main/resources/remove/train.txt"));
+        nerRetailClassifierCv = initTrain(nlpService.processCompetencesTrainData());
+//        nerRetailClassifierCv = initTrain(new File("remove/train.txt"));
     }
 
     @PostConstruct
     private void trainNerBulkClassifierCv() {
-//        nerBulkClassifierCv = initTrain(nlpService.processTrainData());
-        nerBulkClassifierCv = initTrain(new File("/home/dragos/IdeaProjects/cvParser/src/main/resources/remove/train3.txt"));
+        nerBulkClassifierCv = initTrain(nlpService.processTrainData());
+//        nerBulkClassifierCv = initTrain(new File("remove/train3.txt"));
     }
 
     private NerClassifier initTrain(File file) {

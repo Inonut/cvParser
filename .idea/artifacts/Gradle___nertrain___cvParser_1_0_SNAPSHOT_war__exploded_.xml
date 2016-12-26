@@ -10,10 +10,10 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/cvParser-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="cvParser_main/web/Web Gradle : cvParser-1.0-SNAPSHOT.war" />
+      <element id="javaee-facet-resources" facet="cvParser/web/Web Gradle : cvParser-1.0-SNAPSHOT.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="cvParser_main" />
+          <element id="module-output" name="cvParser" />
           <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
         </element>
         <element id="directory" name="lib">

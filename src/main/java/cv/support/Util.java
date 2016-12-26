@@ -7,6 +7,7 @@ import org.neo4j.cypher.internal.frontend.v2_3.ast.functions.Str;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Field;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.charset.Charset;
@@ -71,5 +72,16 @@ public class Util {
             randomStrings[i] = new String(word);
         }
         return randomStrings;
+    }
+
+    public static void setDefaultCharsetToUnicodeUtf8(){
+        try {
+            System.setProperty("file.encoding","UTF-8");
+            Field charset = Charset.class.getDeclaredField("defaultCharset");
+            charset.setAccessible(true);
+            charset.set(null,null);
+        } catch (IllegalAccessException | NoSuchFieldException e) {
+            e.printStackTrace();
+        }
     }
 }

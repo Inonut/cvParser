@@ -1,5 +1,6 @@
 package cv.config.spring;
 
+import cv.support.Util;
 import org.neo4j.ogm.session.SessionFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +12,8 @@ import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.annotation.Resource;
+import java.lang.reflect.Field;
+import java.nio.charset.Charset;
 
 /**
  * @author amitrus
@@ -32,6 +35,8 @@ public class Neo4jContextConfig extends org.springframework.data.neo4j.config.Ne
 
     @Bean
     public org.neo4j.ogm.config.Configuration getConfiguration() {
+
+//        Util.setDefaultCharsetToUnicodeUtf8();
 
         String DB_Location = env.getRequiredProperty("database.storage.path");
 

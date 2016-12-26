@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cvParser.iml" filepath="$PROJECT_DIR$/.idea/modules/cvParser.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cvParser_main.iml" filepath="$PROJECT_DIR$/.idea/modules/cvParser_main.iml" group="cvParser" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cvParser_test.iml" filepath="$PROJECT_DIR$/.idea/modules/cvParser_test.iml" group="cvParser" />
     </modules>
   </component>
 </project>
