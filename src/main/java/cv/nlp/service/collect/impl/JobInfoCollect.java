@@ -1,9 +1,7 @@
 package cv.nlp.service.collect.impl;
 
 import cv.domain.neo4j.JobInfo;
-import cv.support.FindSimilarSequence;
-import cv.support.PeriodePrepare;
-import cv.support.DataWrapper;
+import cv.support.*;
 import cv.nlp.service.collect.Worker;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
@@ -25,16 +23,14 @@ public class JobInfoCollect implements Worker<List<JobInfo>> {
         List<JobInfo> result = new ArrayList<>();
         sequence.getResult().forEach(seq -> {
             DataWrapper seqWrapper = new DataWrapper(seq);
-            PeriodePrepare periodePrepare = new PeriodePrepare();
-            periodePrepare.split(seqWrapper.collect(Section.PERIODE));
+            StringWrapper stringWrapper = new StringWrapper(seqWrapper.collect(Section.DATE)).split(Util.stringDel);
 
             JobInfo jobInfo = new JobInfo();
-            jobInfo.setDateStart(periodePrepare.next());
-            jobInfo.setDateEnd(periodePrepare.next());
+            jobInfo.setDateStart(stringWrapper.pop());
+            jobInfo.setDateEnd(stringWrapper.pop());
             jobInfo.setAdress(seqWrapper.collect(Section.ADRESS));
-            jobInfo.setPeriode(seqWrapper.collect(Section.PERIODE));
             jobInfo.setDescription(seqWrapper.collect(Section.DESCRIPTION));
-            jobInfo.setEmployer(seqWrapper.collect(Section.ANGAJATOR));
+            jobInfo.setEmployer(seqWrapper.collect(Section.EMPLOYER));
             jobInfo.setJobRole(seqWrapper.collect(Section.JOB_ROLE));
 
             result.add(jobInfo);

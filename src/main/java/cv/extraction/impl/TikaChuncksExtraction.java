@@ -1,10 +1,12 @@
-package cv.tika;
+package cv.extraction.impl;
 
 import cv.exception.ExtractionException;
+import cv.extraction.Extraction;
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.AutoDetectParser;
 import org.apache.tika.sax.ContentHandlerDecorator;
+import org.springframework.stereotype.Component;
 import org.xml.sax.SAXException;
 
 import java.io.File;
@@ -18,8 +20,10 @@ import java.util.stream.Collectors;
 /**
  * Created by Dragos on 12/21/2016.
  */
-public class TikaExtraction {
+@Component
+public class TikaChuncksExtraction implements Extraction {
 
+    @Override
     public String perform(File source) throws ExtractionException {
 
         List<String> chunks = new ArrayList<>();

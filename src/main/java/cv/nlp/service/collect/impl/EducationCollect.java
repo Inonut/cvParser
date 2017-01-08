@@ -1,9 +1,7 @@
 package cv.nlp.service.collect.impl;
 
 import cv.domain.neo4j.Education;
-import cv.support.FindSimilarSequence;
-import cv.support.PeriodePrepare;
-import cv.support.DataWrapper;
+import cv.support.*;
 import cv.nlp.service.collect.Worker;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
@@ -26,13 +24,11 @@ public class EducationCollect implements Worker<List<Education>> {
         List<Education> result = new ArrayList<>();
         sequence.getResult().forEach(seq -> {
             DataWrapper seqWrapper = new DataWrapper(seq);
-            PeriodePrepare periodePrepare = new PeriodePrepare();
-            periodePrepare.split(seqWrapper.collect(Section.PERIODE));
+            StringWrapper stringWrapper = new StringWrapper(seqWrapper.collect(Section.DATE)).split(Util.stringDel);
 
             Education education = new Education();
-            education.setDateStart(periodePrepare.next());
-            education.setDateEnd(periodePrepare.next());
-            education.setPeriode(seqWrapper.collect(Section.PERIODE));
+            education.setDateStart(stringWrapper.pop());
+            education.setDateEnd(stringWrapper.pop());
             education.setAdress(seqWrapper.collect(Section.ADRESS));
             education.setDescription(seqWrapper.collect(Section.DESCRIPTION));
             education.setCertificate(seqWrapper.collect(Section.CERTIFICATE));

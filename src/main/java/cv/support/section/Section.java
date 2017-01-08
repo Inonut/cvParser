@@ -13,8 +13,9 @@ public enum Section {
     JOB_ROLE,
     SEX,
     BERTH_DATE,
-    PERIODE,
-    ANGAJATOR,
+    //PERIODE,
+    DATE,
+    EMPLOYER,
     DESCRIPTION,
     CERTIFICATE,
     LANGUAGE,
@@ -22,5 +23,7 @@ public enum Section {
     WORK_EXPERIENCE,
     EDUCATION_AND_TRAINING,
     LANGUAGE_NAME,
-    LANGUAGE_LEVEL
+    LANGUAGE_LEVEL,
+    MOTHER_TONGUE,
+    INPUT_DATA
 }

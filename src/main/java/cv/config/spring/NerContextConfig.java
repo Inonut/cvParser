@@ -1,7 +1,7 @@
 package cv.config.spring;
 
 import cv.nlp.service.NlpService;
-import cv.train.NerClassifier;
+import cv.ner.NerClassifier;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.PropertiesFactoryBean;
 import org.springframework.context.annotation.Bean;
@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Configuration
 public class NerContextConfig {
+
     private NerClassifier nerBulkClassifierCv;
     private NerClassifier nerRetailClassifierCv;
 
@@ -42,20 +43,20 @@ public class NerContextConfig {
 
     @PostConstruct
     private void trainNerRetailClassifierCv() {
-        nerRetailClassifierCv = initTrain(nlpService.processCompetencesTrainData());
-//        nerRetailClassifierCv = initTrain(new File("remove/train.txt"));
+        nerRetailClassifierCv = initTrain(nlpService.processTrainNerRetailData());
+//        nerRetailClassifierCv = initTrain(new File("remove/trainRetail.txt"));
     }
 
     @PostConstruct
     private void trainNerBulkClassifierCv() {
-        nerBulkClassifierCv = initTrain(nlpService.processTrainData());
-//        nerBulkClassifierCv = initTrain(new File("remove/train3.txt"));
+        nerBulkClassifierCv = initTrain(nlpService.processTrainNerBulkData());
+//        nerBulkClassifierCv = initTrain(new File("remove/trainBulk.txt"));
     }
 
     private NerClassifier initTrain(File file) {
         String data= "";
         try {
-            data = new String(Files.readAllBytes(file.toPath()), "UTF-8");
+            data = new String(Files.readAllBytes(file.toPath()));
         } catch (IOException e) {
             e.printStackTrace();
         }

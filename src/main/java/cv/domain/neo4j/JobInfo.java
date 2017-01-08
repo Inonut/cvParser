@@ -11,7 +11,6 @@ public class JobInfo extends DomainObject{
     private String employer;
     private String adress;
     private String description;
-    private String periode;
 
     public String getDateStart() {
         return dateStart;
@@ -61,11 +60,4 @@ public class JobInfo extends DomainObject{
         this.description = description;
     }
 
-    public String getPeriode() {
-        return periode;
-    }
-
-    public void setPeriode(String periode) {
-        this.periode = periode;
-    }
 }

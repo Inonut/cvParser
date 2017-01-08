@@ -4,6 +4,7 @@ package cv.support;
 import cv.support.section.Section;
 import org.neo4j.cypher.internal.frontend.v2_3.ast.functions.Str;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
@@ -24,21 +25,16 @@ import java.util.stream.Collectors;
  */
 public class Util {
 
+    public static String resourcePath = "./src/main/resources";
+
     public static List<String> tokens = Arrays.stream(Section.values()).map(Enum::toString).collect(Collectors.toList());
 
+    @Deprecated
     public static String[] separators = {"â€“", "-" /*45*/, "–" /*150*/, " ", "\n"};
+    public static String stringDel = "\n\n\n\n\n\n\n\n";
 
-    public static String convertToRegex(String str){
+    public static String escapeRegex(String str){
         return "(?iu)" + Pattern.quote(str);
-    }
-
-    public static String normalizeString(String str){
-        /*try {
-            return new String(str.getBytes("UTF-8"));
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }*/
-        return str;
     }
 
     public static Properties loadProps(Reader reader) {
@@ -74,6 +70,10 @@ public class Util {
         return randomStrings;
     }
 
+    public static String generateText(int numberOfWords){
+        return Arrays.stream(generateRandomWords(numberOfWords)).collect(Collectors.joining(" "));
+    }
+
     public static void setDefaultCharsetToUnicodeUtf8(){
         try {
             System.setProperty("file.encoding","UTF-8");
@@ -83,5 +83,14 @@ public class Util {
         } catch (IllegalAccessException | NoSuchFieldException e) {
             e.printStackTrace();
         }
+    }
+
+    public static String nameWithoutExtension(File file){
+        String name = file.getName();
+        int pos = name.lastIndexOf(".");
+        if (pos > 0) {
+            name = name.substring(0, pos);
+        }
+        return name;
     }
 }

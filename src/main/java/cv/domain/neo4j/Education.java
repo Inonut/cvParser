@@ -11,7 +11,6 @@ public class Education extends DomainObject{
     private String certificate;
     private String adress;
     private String description;
-    private String periode;
 
     public String getDateStart() {
         return dateStart;
@@ -53,11 +52,4 @@ public class Education extends DomainObject{
         this.description = description;
     }
 
-    public String getPeriode() {
-        return periode;
-    }
-
-    public void setPeriode(String periode) {
-        this.periode = periode;
-    }
 }

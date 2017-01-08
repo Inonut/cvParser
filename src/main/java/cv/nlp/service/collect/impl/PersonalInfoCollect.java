@@ -3,6 +3,7 @@ package cv.nlp.service.collect.impl;
 import cv.domain.neo4j.PersonalInfo;
 import cv.support.DataWrapper;
 import cv.nlp.service.collect.Worker;
+import cv.support.StringWrapper;
 import cv.support.Util;
 import cv.support.section.Section;
 import cv.support.section.SectionContent;
@@ -22,26 +23,16 @@ public class PersonalInfoCollect implements Worker<PersonalInfo> {
         PersonalInfo personalInfo = new PersonalInfo();
         DataWrapper streamData = new DataWrapper(data);
 
-        String phoneStr = streamData.collect(Section.PHONE);
-        List<String> phone = null;
-        if(phoneStr != null){
-            phone = Arrays.stream(phoneStr.split(Arrays.stream(Util.separators).collect(Collectors.joining("|")))).map(String::trim).filter(s -> !"".equals(s)).collect(Collectors.toList());
-        }
+        StringWrapper stringWrapper = new StringWrapper(streamData.collect(Section.PHONE)).split("\n");
 
         personalInfo.setName(streamData.collect(Section.PERSON));
         personalInfo.setAdress(streamData.collect(Section.ADRESS));
         personalInfo.setEmail(streamData.collect(Section.EMAIL));
-
-        if(phone != null){
-            personalInfo.setPhone1(phone.get(0));
-
-            if(phone.size() > 1){
-                personalInfo.setPhone2(phone.get(1));
-            }
-        }
-
+        personalInfo.setPhone1(stringWrapper.pop());
+        personalInfo.setPhone2(stringWrapper.pop());
         personalInfo.setSex(streamData.collect(Section.SEX));
         personalInfo.setBirthDate(streamData.collect(Section.BERTH_DATE));
+        personalInfo.setJobAppliedFor(streamData.collect(Section.JOB_ROLE));
 
         return personalInfo;
     }

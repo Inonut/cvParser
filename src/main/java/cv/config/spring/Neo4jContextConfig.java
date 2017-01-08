@@ -26,6 +26,10 @@ public class Neo4jContextConfig extends org.springframework.data.neo4j.config.Ne
     @Resource
     private Environment env;
 
+    public Neo4jContextConfig() {
+        Util.setDefaultCharsetToUnicodeUtf8();
+    }
+
     @Bean(name = "neo4jTransactionManager")
     @Qualifier("neo4jTransactionManager")
     @Override
@@ -35,8 +39,6 @@ public class Neo4jContextConfig extends org.springframework.data.neo4j.config.Ne
 
     @Bean
     public org.neo4j.ogm.config.Configuration getConfiguration() {
-
-//        Util.setDefaultCharsetToUnicodeUtf8();
 
         String DB_Location = env.getRequiredProperty("database.storage.path");
 

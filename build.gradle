@@ -70,6 +70,8 @@ dependencies {
     compile group: 'org.apache.tika',name:'tika-parsers', version: tika
 
 
+    compile 'com.googlecode.json-simple:json-simple:1.1.1'
+
     //tess
     //compile group: 'net.sourceforge.tess4j', name: 'tess4j', version: '3.2.1'
 

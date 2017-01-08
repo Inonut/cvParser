@@ -1,4 +1,4 @@
-package cv.train;
+package cv.ner;
 
 import cv.support.section.Section;
 import cv.support.Util;
@@ -12,7 +12,6 @@ import javafx.util.Pair;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -46,11 +45,11 @@ public class NerClassifier extends CRFClassifier{
         this.train(this.makeObjectBankFromString(data, this.defaultReaderAndWriter()));
     }
 
+    /*propagate label to each word and remove labels*/
     private String prepareData(List<Word> words) {
         String result = "";
 
         String key = "";
-        String token = null;
         for (String word: words.stream().map(Word::word).collect(Collectors.toList())){
             if(Util.tokens.contains(word)){
                 key = word;
@@ -62,11 +61,13 @@ public class NerClassifier extends CRFClassifier{
         return result;
     }
 
+    /*split text in words*/
     public String prepareData(File file) throws FileNotFoundException {
         List<Word> words = PTBTokenizer.newPTBTokenizer(new FileReader(file)).tokenize();
         return prepareData(words);
     }
 
+    /*split text in words*/
     public String prepareData(String data){
         List<Word> words = PTBTokenizer.newPTBTokenizer(new StringReader(data)).tokenize();
         return prepareData(words);
@@ -147,15 +148,4 @@ public class NerClassifier extends CRFClassifier{
         }
         super.serializeClassifier(serializePath);
     }
-
-    public static void main(String[] args) throws IOException {
-        NerClassifier nerClassifier = new NerClassifier(new FileReader(new File("./src/main/resources/train_config.properties")));
-        String preparedData = nerClassifier.prepareData(new String(Files.readAllBytes(Paths.get("./src/main/resources/remove/train.txt"))));
-        nerClassifier.train(preparedData);
-
-        nerClassifier.classify(new String(Files.readAllBytes(Paths.get("./testCV5P.txt"))))
-                .forEach(pair -> System.out.printf("--------------\n%s: %s\n", pair.getKey(), pair.getValue()));
-
-    }
-
 }

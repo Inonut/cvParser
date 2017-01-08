@@ -11,7 +11,7 @@ import org.springframework.core.io.ClassPathResource;
  * @author amitrus
  */
 @Configuration
-@Import({Neo4jContextConfig.class, ServicesContextConfig.class, NerContextConfig.class})
+@Import({Neo4jContextConfig.class, ServicesContextConfig.class, NerContextConfig.class, ExtractionContextConfig.class})
 public class MainContextConfig {
 
     @Bean

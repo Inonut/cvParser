@@ -1,5 +1,6 @@
 package cv.support.section.impl;
 
+import cv.support.Util;
 import cv.support.section.SectionContent;
 
 /**
@@ -15,7 +16,7 @@ public class StringSection implements SectionContent {
 
     @Override
     public StringSection concat(SectionContent other) {
-        return new StringSection(content.concat(other.getContent()));
+        return new StringSection(content.concat(Util.stringDel).concat(other.getContent()));
     }
 
     @Override

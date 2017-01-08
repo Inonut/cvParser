@@ -13,6 +13,16 @@ public class PersonalInfo extends DomainObject{
     private String sex;
     private String birthDate;
 
+    public String getJobAppliedFor() {
+        return jobAppliedFor;
+    }
+
+    public void setJobAppliedFor(String jobAppliedFor) {
+        this.jobAppliedFor = jobAppliedFor;
+    }
+
+    private String jobAppliedFor;
+
     public String getName() {
         return name;
     }
